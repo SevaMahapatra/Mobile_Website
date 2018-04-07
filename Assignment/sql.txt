@@ -1,0 +1,9 @@
+create database store;
+
+create table store.user(user_id int(11) PRIMARY KEY AUTO_INCREMENT, admin_id int(11) FOREIGN KEY
+,email_user varchar(255), password varchar(255));
+
+create table store.admin(admin_id int(11) PRIMARY KEY, email varchar(255), password varchar(255));
+
+create table store.items(brand varchar(255), model varchar(255));
+
